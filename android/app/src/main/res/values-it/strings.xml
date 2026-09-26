@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Application & Brand -->
+    <string name="app_name">Profilazione Architettonica</string>
+    <string name="app_tagline">Scopri la Tua Identità Architettonica</string>
+
+    <!-- Navigation & Screens -->
+    <string name="nav_welcome">Benvenuto</string>
+    <string name="nav_tournament">Torneo</string>
+    <string name="nav_results">Risultati Profilo</string>
+    <string name="nav_history">Cronologia</string>
+    <string name="nav_settings">Impostazioni</string>
+
+    <!-- Welcome & Mode Selection -->
+    <string name="welcome_headline">Scoperta Estetica Tramite Scelta a Coppie</string>
+    <string name="welcome_subtitle">Vota tra coppie di capolavori architettonici per calcolare le tue affinità stilistiche, coerenza geometrica e archetipo architettonico.</string>
+    <string name="select_mode_prompt">Seleziona Modalità Torneo</string>
+    <string name="mode_full_title">Torneo Completo (45 confronti)</string>
+    <string name="mode_full_desc">Torneo esaustivo a coppie che valuta tutti i 45 confronti. Massimizza la confidenza statistica, la stima Bradley-Terry e l\'analisi di transitività di Kendall.</string>
+    <string name="mode_quick_title">Profilazione Rapida (15 confronti)</string>
+    <string name="mode_quick_desc">Torneo rapido di 15 confronti che bilancia velocità di profilazione e verifica di transitività. Ideale per una rapida impressione estetica.</string>
+    <string name="btn_start_tournament">Inizia Torneo</string>
+
+    <!-- Tournament Comparison Screen -->
+    <string name="tournament_step">Confronto %1$d di %2$d</string>
+    <string name="tournament_prompt">Quale espressione architettonica risuona di più con te?</string>
+    <string name="card_option_a">Opzione A</string>
+    <string name="card_option_b">Opzione B</string>
+    <string name="btn_vote_left">Vota Sinistra</string>
+    <string name="btn_vote_right">Vota Destra</string>
+    <string name="btn_undo">Annulla</string>
+    <string name="btn_redo">Ripeti</string>
+    <string name="undo_tooltip">Annulla l\'ultimo voto espresso</string>
+    <string name="redo_tooltip">Ripeti il voto annullato</string>
+    <string name="match_vs">VS</string>
+    <string name="btn_restart">Riavvia</string>
+    <string name="dialog_restart_title">Riavviare il Torneo?</string>
+    <string name="dialog_restart_desc">I progressi del torneo in corso andranno persi. Vuoi davvero riavviare?</string>
+
+    <!-- Categories (5) -->
+    <string name="category_classical_renaissance_name">Classico e Rinascimentale</string>
+    <string name="category_classical_renaissance_desc">Fondato sulle proporzioni greco-romane, simmetria, ordini architettonici e armonia umanistica.</string>
+    <string name="category_historicist_sacred_name">Storicista e Sacro</string>
+    <string name="category_historicist_sacred_desc">Architetture monumentali, teatrali e spirituali ricche di decorazioni che celebrano la narrazione sacra.</string>
+    <string name="category_early_modern_industrial_name">Primo Moderno e Industriale</string>
+    <string name="category_early_modern_industrial_desc">La fusione tra tecnologia dell\'era industriale, stilizzazione geometrica e ingegneria a vista.</string>
+    <string name="category_modernism_functionalism_name">Modernismo e Funzionalismo</string>
+    <string name="category_modernism_functionalism_desc">Radicale chiarezza geometrica, superfici disadorne, onestà costruttiva e forma che segue la funzione.</string>
+    <string name="category_contemporary_parametric_name">Contemporaneo e Parametrico</string>
+    <string name="category_contemporary_parametric_desc">Geometrie non-euclidee, forme fluide computazionali e involucri spaziali decostruiti e dinamici.</string>
+
+    <!-- Architectural Styles (10) -->
+    <!-- Style 1: Classical Antiquity -->
+    <string name="style_1_name">Antichità Classica</string>
+    <string name="style_1_title">Il Colonnato del Partenone</string>
+    <string name="style_1_era">V Secolo a.C.</string>
+    <string name="style_1_desc">Templi monumentali in marmo a sistema trilitico, esempio di proporzione dorica, armonia dell\'architrave e perfezione matematica.</string>
+    <!-- Style 2: Gothic -->
+    <string name="style_2_name">Architettura Gotica</string>
+    <string name="style_2_title">La Navata di Notre-Dame</string>
+    <string name="style_2_era">XII - XIV Secolo</string>
+    <string name="style_2_desc">Slancio verticale reso possibile da archi a sesto acuto, volte a crociera ogivali, contrafforti rampanti e luminosi rosoni istoriati.</string>
+    <!-- Style 3: Italian Renaissance -->
+    <string name="style_3_name">Rinascimento Italiano</string>
+    <string name="style_3_title">Basilica di Santa Maria del Fiore</string>
+    <string name="style_3_era">XV - XVI Secolo</string>
+    <string name="style_3_desc">Rinascita della simmetria umanistica, archi a tutto sesto, facciate bugnate in pietra serena e cupole monumentali.</string>
+    <!-- Style 4: Baroque -->
+    <string name="style_4_name">Architettura Barocca</string>
+    <string name="style_4_title">San Carlo alle Quattro Fontane</string>
+    <string name="style_4_era">XVII - XVIII Secolo</string>
+    <string name="style_4_desc">Dinamismo teatrale caratterizzato da facciate ondulate, contrasti di chiaroscuro, cupole ellittiche e sontuosi stucchi dorati.</string>
+    <!-- Style 5: Art Deco -->
+    <string name="style_5_name">Art Déco</string>
+    <string name="style_5_title">La Guglia del Chrysler Building</string>
+    <string name="style_5_era">Inizio XX Secolo (1920-1939)</string>
+    <string name="style_5_desc">Lusso geometrico e ottimismo dell\'era industriale con ziggurat a gradoni, motivi a raggiera e acciaio inossidabile lucido.</string>
+    <!-- Style 6: Bauhaus -->
+    <string name="style_6_name">Bauhaus e Stile Internazionale</string>
+    <string name="style_6_title">Edificio Studio del Bauhaus Dessau</string>
+    <string name="style_6_era">Metà XX Secolo (1919-1933)</string>
+    <string name="style_6_desc">Funzionalismo radicale privo di ornamenti, caratterizzato da facciate continue in vetro, scheletri in acciaio e razionalismo ortogonale.</string>
+    <!-- Style 7: Brutalism -->
+    <string name="style_7_name">Brutalismo</string>
+    <string name="style_7_title">Il Monolite del Boston City Hall</string>
+    <string name="style_7_era">Metà-Fine XX Secolo (1950-1975)</string>
+    <string name="style_7_desc">Forza scultorea pura scolpita in cemento a vista cassero legno (béton brut), sbalzi possenti e permanenza tettonica.</string>
+    <!-- Style 8: High-Tech -->
+    <string name="style_8_name">Architettura High-Tech</string>
+    <string name="style_8_title">Centre Pompidou / Lloyd\'s Building</string>
+    <string name="style_8_era">Fine XX Secolo (1970-1995)</string>
+    <string name="style_8_desc">Esoscheletri strutturali esterni, travature reticolari tubolari, condotti impiantistici colorati e trasparenza tecnologica.</string>
+    <!-- Style 9: Deconstructivism -->
+    <string name="style_9_name">Decostruttivismo</string>
+    <string name="style_9_title">Museo Guggenheim Bilbao</string>
+    <string name="style_9_era">Fine XX - Inizio XXI Secolo</string>
+    <string name="style_9_desc">Destabilizzazione spaziale controllata caratterizzata da volumi frammentati, piani non ortogonali e rivestimenti fluidi in titanio.</string>
+    <!-- Style 10: Parametric -->
+    <string name="style_10_name">Architettura Parametrica</string>
+    <string name="style_10_title">Centro Culturale Heydar Aliyev</string>
+    <string name="style_10_era">XXI Secolo (2005-Presente)</string>
+    <string name="style_10_desc">Continuità topologica algoritmica, involucri fluidi a doppia curvatura e transizioni fluide tra edificio e suolo.</string>
+
+    <!-- Personality Archetypes (8) -->
+    <!-- Archetype 1: Purist Rationalist -->
+    <string name="archetype_purist_rationalist_title">Il Razionalista Puro</string>
+    <string name="archetype_purist_rationalist_tagline">La forma segue la funzione senza compromessi.</string>
+    <string name="archetype_purist_rationalist_narrative">Valuti l\'assoluta chiarezza spaziale, l\'onestà geometrica e l\'eleganza priva di ornamenti. Per te l\'architettura è uno strumento calibrato dell\'abitare dove la struttura stessa diventa bellezza.</string>
+    <!-- Archetype 2: Classical Monumentalist -->
+    <string name="archetype_classical_monumentalist_title">Il Monumentalista Classico</string>
+    <string name="archetype_classical_monumentalist_tagline">Armonia in eterne proporzioni e sezioni auree.</string>
+    <string name="archetype_classical_monumentalist_narrative">Trovi rifugio nelle geometrie eterne, negli ordini tripartiti e nella dignità degli spazi civici antichi. L\'architettura è una testimonianza duratura di armonia umanistica e ordine senza tempo.</string>
+    <!-- Archetype 3: Brutalist Sculptor -->
+    <string name="archetype_brutalist_sculptor_title">Lo Scultore Brutalista</string>
+    <string name="archetype_brutalist_sculptor_tagline">La poesia del cemento a vista e della massa tettonica.</string>
+    <string name="archetype_brutalist_sculptor_narrative">Celebri la verità tettonica. Sbalzi possenti, cemento armato a vista e permanenza monolitica esigono il tuo profondo rispetto estetico.</string>
+    <!-- Archetype 4: Romantic Historian -->
+    <string name="archetype_romantic_historian_title">Lo Storico Romantico</string>
+    <string name="archetype_romantic_historian_tagline">L\'architettura come narrazione sacra, mistero e dramma.</string>
+    <string name="archetype_romantic_historian_narrative">Per te l\'architettura è teatro emozionale e risonanza spirituale. Sei attratto da volte a costoloni slanciate, chiaroscuri teatrali e intricato simbolismo scultoreo.</string>
+    <!-- Archetype 5: Parametric Visionary -->
+    <string name="archetype_parametric_visionary_title">Il Visionario Parametrico</string>
+    <string name="archetype_parametric_visionary_tagline">Biologia computazionale fluida tradotta in forma costruita.</string>
+    <string name="archetype_parametric_visionary_narrative">Abiti il futuro del design spaziale. Involucri continui a doppia curvatura, fluidità topologica e transizioni senza soluzione di continuità definiscono la tua visione d\'avanguardia.</string>
+    <!-- Archetype 6: High-Tech Pragmatist -->
+    <string name="archetype_hightech_pragmatist_title">Il Pragmatico High-Tech</string>
+    <string name="archetype_hightech_pragmatist_tagline">L\'edificio come macchina espressiva e vivente.</string>
+    <string name="archetype_hightech_pragmatist_narrative">Celebri l\'onestà ingegneristica e gli esoscheletri d\'acciaio a vista. La struttura e gli impianti tecnologici diventano l\'espressione artistica primaria.</string>
+    <!-- Archetype 7: Avant-Garde Deconstructivist -->
+    <string name="archetype_avantgarde_deconstructivist_title">Il Decostruttivista d\'Avanguardia</string>
+    <string name="archetype_avantgarde_deconstructivist_tagline">Caos controllato e distorsione geometrica sovversiva.</string>
+    <string name="archetype_avantgarde_deconstructivist_narrative">Sfidi l\'abitudine spaziale attraverso volumi intersecati non ortogonali, piani frammentati e dinamica tensione cinetica.</string>
+    <!-- Archetype 8: Eclectic Synthesizer -->
+    <string name="archetype_eclectic_synthesizer_title">Il Sintetizzatore Eclettico</string>
+    <string name="archetype_eclectic_synthesizer_tagline">Armonizzazione tra profondità storica e audacia moderna.</string>
+    <string name="archetype_eclectic_synthesizer_narrative">Rifiuti di farti vincolare da un singolo dogma. La tua estetica sintetizza l\'armonia storica classica con l\'audacia moderna in una sensibilità sfaccettata ed elegante.</string>
+
+    <!-- Radar Chart 5 Axes -->
+    <string name="radar_axis_era">Epoca</string>
+    <string name="radar_axis_ornamentation">Ornamentazione</string>
+    <string name="radar_axis_structural_honesty">Onestà Strutturale</string>
+    <string name="radar_axis_geometric_order">Ordine Geometrico</string>
+    <string name="radar_axis_material_warmth">Calore dei Materiali</string>
+
+    <!-- Results Screen -->
+    <string name="results_title">Il Tuo Profilo Estetico</string>
+    <string name="results_champion_label">Stile Architettonico Campione</string>
+    <string name="results_confidence_badge">%1$d%% Confidenza</string>
+    <string name="results_consistency_stat">Coerenza Decisionale (\u03B6): %1$.1f%%</string>
+    <string name="results_victory_margin_stat">Margine di Vittoria (\u0394): %1$.1f%%</string>
+    <string name="results_triads_stat">Contraddizioni (Triadi): %1$d</string>
+    <string name="results_radar_header">Coordinate Estetiche su 5 Assi</string>
+    <string name="results_category_breakdown_header">Distribuzione Affinità per Categoria</string>
+    <string name="results_style_rankings_header">Classifica Completa degli Stili</string>
+    <string name="results_saved_snackbar">Profilo salvato con successo nella cronologia!</string>
+    <string name="btn_save_history">Salva nella Cronologia</string>
+    <string name="btn_view_history">Vedi Cronologia</string>
+    <string name="btn_retake_tournament">Riavvia Torneo</string>
+
+    <!-- History Screen -->
+    <string name="history_title">Profili Torneo Salvati</string>
+    <string name="history_empty_title">Nessun Profilo Salvato</string>
+    <string name="history_empty_desc">Esegui il tuo primo torneo per scoprire e archiviare la tua identità architettonica.</string>
+    <string name="history_item_subtitle">%1$s \u2022 %2$d%% confidenza \u2022 %3$d confronti</string>
+    <string name="btn_clear_history">Cancella Cronologia</string>
+    <string name="dialog_clear_history_title">Cancellare la Cronologia?</string>
+    <string name="dialog_clear_history_desc">Sei sicuro di voler eliminare tutti i profili salvati? Questa azione non può essere annullata.</string>
+
+    <!-- Settings & Personalization -->
+    <string name="settings_title">Impostazioni</string>
+    <string name="settings_appearance_header">Aspetto e Tema</string>
+    <string name="settings_theme_mode">Modalità Tema</string>
+    <string name="theme_system">Predefinito di Sistema</string>
+    <string name="theme_light">Chiaro Architettonico (Travertino)</string>
+    <string name="theme_dark">Scuro Architettonico (Ossidiana)</string>
+    <string name="settings_language_header">Lingua / Language</string>
+    <string name="language_en">English</string>
+    <string name="language_it">Italiano</string>
+    <string name="settings_about_header">Informazioni su Architecture Profiling</string>
+    <string name="settings_about_version">Versione 1.0.0 (Native Jetpack Compose)</string>
+    <string name="settings_about_desc">Strumento nativo multipiattaforma di profilazione estetica che combina la scelta a coppie, la stima del modello di Bradley-Terry e la verifica di transitività di Kendall.</string>
+
+    <!-- Miglioramenti UI/UX e Guida -->
+    <string name="action_help">Guida e Meccaniche</string>
+    <string name="dialog_help_tournament_title">Meccaniche del Torneo</string>
+    <string name="dialog_help_tournament_intro">In ciascun confronto, scegli l\'espressione architettonica che preferisci. Il torneo utilizza una pianificazione matematica a 1-fattorizzazione per mostrare ciascuna opera in modo equilibrato e con la massima distanza tra le apparizioni.</string>
+    <string name="dialog_help_tournament_modes_header">Modalità Torneo</string>
+    <string name="dialog_help_tournament_modes_body">Torneo Completo (45 confronti): Confronto a coppie esaustivo su tutti i 10 stili per la massima confidenza statistica e analisi di transitività di Kendall.\n\nProfilazione Rapida (15 confronti): Sottoinsieme su grafo 3-regolare per una rapida scoperta estetica.</string>
+    <string name="dialog_help_tournament_shortcuts_header">Scorciatoie da Tastiera</string>
+    <string name="dialog_help_tournament_shortcuts_body">Premi [1] o [Freccia Sinistra] per l\'Opzione A\nPremi [2] o [Freccia Destra] per l\'Opzione B\nPremi [U] per Annullare, [R] per Ripetere\nPremi [Esc] per uscire.</string>
+    <string name="dialog_help_confidence_title">Comprendere la Percentuale di Confidenza</string>
+    <string name="dialog_help_confidence_intro">La percentuale di confidenza misura quanto siano state coerenti, decise e distinte le tue scelte estetiche:</string>
+    <string name="dialog_help_confidence_consistency">Coerenza Decisionale (\u03B6): Misura la transitività. 100% significa che non hai mai espresso scelte circolari contraddittorie (come A > B, B > C, ma C > A).</string>
+    <string name="dialog_help_confidence_margin">Margine di Vittoria (\u0394): Il divario di probabilità che separa lo stile campione dal secondo classificato.</string>
+    <string name="dialog_help_confidence_triads">Contraddizioni (Triadi): Il numero esatto di cicli di preferenza contraddittori rilevati.</string>
+    <string name="dialog_help_confidence_formula">Formula di Confidenza: (0.45\u03B6 + 0.35 f(\u0394) + 0.20 C_H) \u00D7 100% sintetizza transitività, margine di vittoria e concentrazione di entropia.</string>
+    <string name="dialog_delete_record_title">Eliminare il Profilo?</string>
+    <string name="dialog_delete_record_desc">Vuoi rimuovere il profilo \"%1$s\" dalla cronologia? L\'azione non può essere annullata.</string>
+    <string name="btn_delete">Elimina</string>
+
+    <!-- General Utility -->
+    <string name="btn_confirm">Conferma</string>
+    <string name="btn_cancel">Annulla</string>
+    <string name="btn_close">Chiudi</string>
+    <string name="btn_back">Indietro</string>
+</resources>

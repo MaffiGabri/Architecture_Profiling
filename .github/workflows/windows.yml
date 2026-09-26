@@ -1,0 +1,154 @@
+name: Windows Desktop Companion CI
+
+on:
+  push:
+    branches: [ main, master ]
+    paths:
+      - 'windows/**'
+      - 'shared/**'
+      - 'tests/**'
+      - 'scripts/**'
+      - '.github/workflows/windows.yml'
+  pull_request:
+    branches: [ main, master ]
+    paths:
+      - 'windows/**'
+      - 'shared/**'
+      - 'tests/**'
+      - 'scripts/**'
+      - '.github/workflows/windows.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-windows:
+    name: Windows CI (${{ matrix.name }})
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - compiler: msvc
+            name: "MSVC 2022 + Ninja"
+            generator: "Ninja"
+          - compiler: mingw
+            name: "MinGW-w64 GCC + Ninja"
+            generator: "Ninja"
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # ------------------------------------------------------------------------
+      # Toolchain Setup: MSVC (Visual Studio 2022)
+      # ------------------------------------------------------------------------
+      - name: Set up MSVC Developer Command Prompt
+        if: matrix.compiler == 'msvc'
+        uses: ilammy/msvc-dev-cmd@v1
+        with:
+          arch: x64
+
+      # ------------------------------------------------------------------------
+      # Toolchain Setup: MinGW-w64 (MSYS2 UCRT64 GCC)
+      # ------------------------------------------------------------------------
+      - name: Set up MSYS2 MinGW-w64 (UCRT64)
+        if: matrix.compiler == 'mingw'
+        uses: msys2/setup-msys2@v2
+        with:
+          msystem: UCRT64
+          update: false
+          install: >-
+            mingw-w64-ucrt-x86_64-gcc
+            mingw-w64-ucrt-x86_64-cmake
+            mingw-w64-ucrt-x86_64-ninja
+
+      # ------------------------------------------------------------------------
+      # Configure Phase
+      # ------------------------------------------------------------------------
+      - name: Configure CMake (MSVC)
+        if: matrix.compiler == 'msvc'
+        run: |
+          cmake -B build -S windows -G Ninja -DCMAKE_BUILD_TYPE=Release
+
+      - name: Configure CMake (MinGW-w64)
+        if: matrix.compiler == 'mingw'
+        shell: msys2 {0}
+        run: |
+          cmake -B build -S windows -G Ninja -DCMAKE_BUILD_TYPE=Release
+
+      # ------------------------------------------------------------------------
+      # Build Phase
+      # ------------------------------------------------------------------------
+      - name: Build Targets (MSVC)
+        if: matrix.compiler == 'msvc'
+        run: |
+          cmake --build build --config Release --parallel
+
+      - name: Build Targets (MinGW-w64)
+        if: matrix.compiler == 'mingw'
+        shell: msys2 {0}
+        run: |
+          cmake --build build --config Release --parallel
+
+      # ------------------------------------------------------------------------
+      # Asset Verification Phase
+      # ------------------------------------------------------------------------
+      - name: Verify Post-Build Asset Deployment
+        shell: pwsh
+        run: |
+          Write-Host "Verifying deployed assets in build/bin/assets..."
+          $DataDir = "build/bin/assets/data"
+          $ImagesDir = "build/bin/assets/images"
+
+          if (-not (Test-Path "$DataDir/styles.json")) {
+              throw "Validation Error: build/bin/assets/data/styles.json was not deployed!"
+          }
+          $ImageCount = (Get-ChildItem -Path "$ImagesDir" -Filter "*.png").Count
+          if ($ImageCount -lt 10) {
+              throw "Validation Error: Expected 10 mock PNG images in $ImagesDir, found $ImageCount!"
+          }
+          Write-Host "[OK] All 10 architectural images and styles.json verified in build output."
+
+      # ------------------------------------------------------------------------
+      # Test Phase (CTest)
+      # ------------------------------------------------------------------------
+      - name: Execute CTest Unit Test Suite (MSVC)
+        if: matrix.compiler == 'msvc'
+        run: |
+          ctest --test-dir build --output-on-failure -C Release
+
+      - name: Execute CTest Unit Test Suite (MinGW-w64)
+        if: matrix.compiler == 'mingw'
+        shell: msys2 {0}
+        run: |
+          ctest --test-dir build --output-on-failure -C Release
+
+      # ------------------------------------------------------------------------
+      # Cross-Platform Mathematical Determinism Verification
+      # ------------------------------------------------------------------------
+      - name: Run Cross-Platform Determinism Oracle
+        shell: pwsh
+        run: |
+          python scripts/verify_cross_platform_determinism.py
+
+      # ------------------------------------------------------------------------
+      # Artifact Packaging & Upload
+      # ------------------------------------------------------------------------
+      - name: Package Windows Application Bundle
+        shell: pwsh
+        run: |
+          $DistDir = "dist/windows-${{ matrix.compiler }}"
+          New-Item -ItemType Directory -Path "$DistDir" -Force | Out-Null
+          Copy-Item -Path "build/bin/architecture_windows.exe" -Destination "$DistDir/"
+          Copy-Item -Path "build/bin/assets" -Destination "$DistDir/" -Recurse
+          Write-Host "Package assembled in $DistDir"
+
+      - name: Upload Windows Desktop Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: architecture-windows-${{ matrix.compiler }}
+          path: dist/windows-${{ matrix.compiler }}
+          if-no-files-found: error
+          retention-days: 14
