@@ -1,5 +1,6 @@
 #include <windows.h>
 #include <iostream>
+#include <fstream>
 #include <filesystem>
 #include <vector>
 #include <memory>
@@ -81,43 +82,58 @@ std::filesystem::path resolve_asset_root_path() {
 } // namespace
 
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
+    std::ofstream log("debug_log.txt");
+    log << "App started" << std::endl;
     // 1. Persistence & User Profiles
     arch::data::ProfileRepository profile_repo;
     profile_repo.load();
+    log << "Profiles loaded" << std::endl;
+
 
     arch::data::HistoryRepository history_repo;
+    log << "Calling history_repo.load()..." << std::endl;
     history_repo.load();
+    log << "History loaded" << std::endl;
 
+    log << "Calling profile_repo.get_active_profile()..." << std::endl;
     const auto& active_profile = profile_repo.get_active_profile();
+    log << "Active profile fetched" << std::endl;
 
     // 2. Localization & Theme Managers
+    log << "Initializing LocalizationManager..." << std::endl;
     auto& i18n = arch::ui::LocalizationManager::instance();
+    log << "Setting language..." << std::endl;
     i18n.set_language(
         (active_profile.preferences.language == arch::data::LanguagePref::IT)
             ? arch::ui::Language::IT
             : arch::ui::Language::EN
     );
+    log << "Language set" << std::endl;
 
+    // 3. DirectX 11 & Win32 Window Context
+    arch::platform::D3D11Context context;
+    if (!context.initialize(1280, 840, L"Architecture Profiling - Windows Desktop Companion")) {
+        log << "Context initialization failed!" << std::endl;
+        MessageBoxW(nullptr, L"Failed to initialize DirectX 11 rendering context.", L"Error", MB_ICONERROR);
+        return 1;
+    }
+    log << "Context initialized" << std::endl;
+
+    log << "Initializing ThemeManager..." << std::endl;
     auto& theme_mgr = arch::ui::ThemeManager::instance();
+    log << "Setting theme..." << std::endl;
     theme_mgr.apply_theme(
         (active_profile.preferences.theme == arch::data::ThemePref::Light)
             ? arch::ui::Theme::Light
             : arch::ui::Theme::Dark
     );
-
-    // 3. DirectX 11 & Win32 Window Context
-    arch::platform::D3D11Context context;
-    if (!context.initialize(1280, 840, L"Architecture Profiling - Windows Desktop Companion")) {
-        MessageBoxW(nullptr, L"Failed to initialize DirectX 11 rendering context.", L"Error", MB_ICONERROR);
-        return 1;
-    }
-
-    // Apply ImGui theme colors and metrics to current style
-    theme_mgr.apply_theme(theme_mgr.current_theme());
+    log << "Theme set" << std::endl;
 
     // 4. Load Architectural Styles & Categories Metadata
     auto styles_path = resolve_styles_json_path();
+    log << "Styles path resolved to: " << styles_path << std::endl;
     auto [styles, categories] = arch::domain::JsonLoader::load_styles(styles_path);
+    log << "Styles loaded count: " << styles.size() << std::endl;
     if (styles.empty()) {
         std::cerr << "[Main] Warning: No styles loaded from " << styles_path << std::endl;
     }
