@@ -114,6 +114,11 @@ file(GLOB_RECURSE APP_SOURCES
 
 add_executable(architecture_windows WIN32 ${APP_SOURCES} ${IMGUI_SOURCES})
 
+# Statically link libstdc++ and libgcc to avoid missing DLL errors on Windows
+if(MINGW)
+    target_link_options(architecture_windows PRIVATE "-static")
+endif()
+
 target_include_directories(architecture_windows PRIVATE
     "${CMAKE_CURRENT_SOURCE_DIR}/include"
     "${CMAKE_CURRENT_SOURCE_DIR}/src"
