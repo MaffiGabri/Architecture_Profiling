@@ -1,0 +1,318 @@
+{
+  "$schema": "./styles.schema.json",
+  "version": "1.0.0",
+  "categories": [
+    {
+      "id": "classical_renaissance",
+      "name_en": "Classical & Renaissance",
+      "name_it": "Classico e Rinascimentale",
+      "description_en": "Rooted in ancient Greco-Roman proportion, symmetry, classical orders, and humanistic harmony.",
+      "description_it": "Fondato sulle proporzioni greco-romane, simmetria, ordini architettonici e armonia umanistica.",
+      "color_hex": "#C5A059"
+    },
+    {
+      "id": "historicist_sacred",
+      "name_en": "Historicist & Sacred",
+      "name_it": "Storicista e Sacro",
+      "description_en": "Theatrical, spiritual, and ornate monumental architectures celebrating sacred narrative and dynamic drama.",
+      "description_it": "Architetture monumentali, teatrali e spirituali ricche di decorazioni che celebrano la narrazione sacra.",
+      "color_hex": "#800020"
+    },
+    {
+      "id": "early_modern_industrial",
+      "name_en": "Early Modern & Industrial",
+      "name_it": "Primo Moderno e Industriale",
+      "description_en": "The fusion of machine-age technology, geometric stylization, and expressive industrial engineering.",
+      "description_it": "La fusione tra tecnologia dell'era industriale, stilizzazione geometrica e ingegneria a vista.",
+      "color_hex": "#008080"
+    },
+    {
+      "id": "modernism_functionalism",
+      "name_en": "Modernism & Functionalism",
+      "name_it": "Modernismo e Funzionalismo",
+      "description_en": "Radical geometric clarity, unadorned surfaces, structural honesty, and form following function.",
+      "description_it": "Radicale chiarezza geometrica, superfici disadorne, onestà costruttiva e forma che segue la funzione.",
+      "color_hex": "#4A6984"
+    },
+    {
+      "id": "contemporary_parametric",
+      "name_en": "Contemporary & Parametric",
+      "name_it": "Contemporaneo e Parametrico",
+      "description_en": "Non-Euclidean geometries, computational fluid forms, and deconstructed non-orthogonal spatial envelopes.",
+      "description_it": "Geometrie non-euclidee, forme fluide computazionali e involucri spaziali decostruiti e dinamici.",
+      "color_hex": "#9B59B6"
+    }
+  ],
+  "styles": [
+    {
+      "id": 1,
+      "filename": "arch_01_classical.png",
+      "title": "The Parthenon Colonnade",
+      "style_en": "Classical Antiquity",
+      "style_it": "Antichità Classica",
+      "category_id": "classical_renaissance",
+      "era_century": "5th Century BC",
+      "base_weight": 1.0,
+      "traits": {
+        "era": 0.5,
+        "ornamentation": 5.5,
+        "structural_honesty": 7.0,
+        "geometric_order": 0.5,
+        "material_warmth": 8.5
+      },
+      "tags": [
+        "doric_columns",
+        "triangular_pediment",
+        "entablature",
+        "peristyle",
+        "pentelic_marble",
+        "axial_symmetry",
+        "golden_ratio"
+      ],
+      "color_hex": "#D4AF37"
+    },
+    {
+      "id": 2,
+      "filename": "arch_02_gothic.png",
+      "title": "Notre-Dame Cathedral Nave",
+      "style_en": "Gothic Architecture",
+      "style_it": "Architettura Gotica",
+      "category_id": "historicist_sacred",
+      "era_century": "12th - 14th Century",
+      "base_weight": 1.0,
+      "traits": {
+        "era": 2.0,
+        "ornamentation": 9.5,
+        "structural_honesty": 8.5,
+        "geometric_order": 2.5,
+        "material_warmth": 6.5
+      },
+      "tags": [
+        "pointed_arches",
+        "ribbed_vaults",
+        "flying_buttresses",
+        "rose_window",
+        "stone_filigree",
+        "verticality",
+        "stained_glass"
+      ],
+      "color_hex": "#6A1B9A"
+    },
+    {
+      "id": 3,
+      "filename": "arch_03_renaissance.png",
+      "title": "Basilica of Santa Maria del Fiore",
+      "style_en": "Italian Renaissance",
+      "style_it": "Rinascimento Italiano",
+      "category_id": "classical_renaissance",
+      "era_century": "15th - 16th Century",
+      "base_weight": 1.0,
+      "traits": {
+        "era": 3.5,
+        "ornamentation": 6.5,
+        "structural_honesty": 5.5,
+        "geometric_order": 1.0,
+        "material_warmth": 8.0
+      },
+      "tags": [
+        "monumental_dome",
+        "semicircular_arches",
+        "pietra_serena",
+        "rusticated_facade",
+        "harmonic_proportion",
+        "pilasters",
+        "lantern"
+      ],
+      "color_hex": "#C0392B"
+    },
+    {
+      "id": 4,
+      "filename": "arch_04_baroque.png",
+      "title": "San Carlo alle Quattro Fontane",
+      "style_en": "Baroque Architecture",
+      "style_it": "Architettura Barocca",
+      "category_id": "historicist_sacred",
+      "era_century": "17th - 18th Century",
+      "base_weight": 1.0,
+      "traits": {
+        "era": 4.5,
+        "ornamentation": 10.0,
+        "structural_honesty": 3.0,
+        "geometric_order": 5.0,
+        "material_warmth": 8.5
+      },
+      "tags": [
+        "undulating_facade",
+        "chiaroscuro_lighting",
+        "oval_dome",
+        "gilded_stucco",
+        "theatricality",
+        "dynamic_curves",
+        "cartouches"
+      ],
+      "color_hex": "#B8860B"
+    },
+    {
+      "id": 5,
+      "filename": "arch_05_art_deco.png",
+      "title": "Chrysler Building Spire",
+      "style_en": "Art Deco",
+      "style_it": "Art Déco",
+      "category_id": "early_modern_industrial",
+      "era_century": "Early 20th Century (1920-1939)",
+      "base_weight": 1.0,
+      "traits": {
+        "era": 6.5,
+        "ornamentation": 7.0,
+        "structural_honesty": 5.0,
+        "geometric_order": 2.0,
+        "material_warmth": 4.0
+      },
+      "tags": [
+        "sunburst_spire",
+        "stepped_ziggurat",
+        "geometric_chevrons",
+        "nirosta_steel",
+        "vertical_piers",
+        "streamline",
+        "machine_age"
+      ],
+      "color_hex": "#008B8B"
+    },
+    {
+      "id": 6,
+      "filename": "arch_06_bauhaus.png",
+      "title": "Bauhaus Dessau Studio Building",
+      "style_en": "Bauhaus & International Style",
+      "style_it": "Bauhaus e Stile Internazionale",
+      "category_id": "modernism_functionalism",
+      "era_century": "Mid 20th Century (1919-1933)",
+      "base_weight": 1.0,
+      "traits": {
+        "era": 7.0,
+        "ornamentation": 0.5,
+        "structural_honesty": 9.0,
+        "geometric_order": 0.5,
+        "material_warmth": 2.0
+      },
+      "tags": [
+        "glass_curtain_wall",
+        "orthogonal_grid",
+        "steel_frame",
+        "white_render",
+        "form_follows_function",
+        "asymmetric_balance",
+        "rationalism"
+      ],
+      "color_hex": "#E74C3C"
+    },
+    {
+      "id": 7,
+      "filename": "arch_07_brutalism.png",
+      "title": "Boston City Hall Monolith",
+      "style_en": "Brutalism",
+      "style_it": "Brutalismo",
+      "category_id": "modernism_functionalism",
+      "era_century": "Mid-Late 20th Century (1950-1975)",
+      "base_weight": 1.0,
+      "traits": {
+        "era": 7.8,
+        "ornamentation": 0.0,
+        "structural_honesty": 10.0,
+        "geometric_order": 3.5,
+        "material_warmth": 4.5
+      },
+      "tags": [
+        "beton_brut",
+        "board_marked_concrete",
+        "heavy_cantilevers",
+        "monolithic_mass",
+        "deep_recessed_windows",
+        "tectonic_honesty",
+        "geometric_sculpture"
+      ],
+      "color_hex": "#708090"
+    },
+    {
+      "id": 8,
+      "filename": "arch_08_hightech.png",
+      "title": "Centre Pompidou / Lloyd's Building",
+      "style_en": "High-Tech Architecture",
+      "style_it": "Architettura High-Tech",
+      "category_id": "early_modern_industrial",
+      "era_century": "Late 20th Century (1970-1995)",
+      "base_weight": 1.0,
+      "traits": {
+        "era": 8.2,
+        "ornamentation": 1.5,
+        "structural_honesty": 10.0,
+        "geometric_order": 4.0,
+        "material_warmth": 1.0
+      },
+      "tags": [
+        "external_exoskeleton",
+        "color_coded_ducts",
+        "tubular_steel_trusses",
+        "gerberettes",
+        "industrial_transparency",
+        "structural_expressionism",
+        "prefabrication"
+      ],
+      "color_hex": "#2980B9"
+    },
+    {
+      "id": 9,
+      "filename": "arch_09_deconstructivism.png",
+      "title": "Guggenheim Museum Bilbao",
+      "style_en": "Deconstructivism",
+      "style_it": "Decostruttivismo",
+      "category_id": "contemporary_parametric",
+      "era_century": "Late 20th - Early 21st Century (1988-Present)",
+      "base_weight": 1.0,
+      "traits": {
+        "era": 9.2,
+        "ornamentation": 2.0,
+        "structural_honesty": 6.0,
+        "geometric_order": 9.5,
+        "material_warmth": 3.0
+      },
+      "tags": [
+        "titanium_cladding",
+        "non_orthogonal_planes",
+        "fragmented_volumes",
+        "catia_computation",
+        "sculptural_distortion",
+        "controlled_chaos",
+        "dynamic_interlocking"
+      ],
+      "color_hex": "#8E44AD"
+    },
+    {
+      "id": 10,
+      "filename": "arch_10_parametric.png",
+      "title": "Heydar Aliyev Cultural Center",
+      "style_en": "Parametric & Organic",
+      "style_it": "Architettura Parametrica",
+      "category_id": "contemporary_parametric",
+      "era_century": "21st Century (2005-Present)",
+      "base_weight": 1.0,
+      "traits": {
+        "era": 9.8,
+        "ornamentation": 3.0,
+        "structural_honesty": 7.5,
+        "geometric_order": 9.0,
+        "material_warmth": 4.0
+      },
+      "tags": [
+        "double_curved_envelope",
+        "biomorphic_flow",
+        "voronoi_geometry",
+        "seamless_transitions",
+        "computational_topology",
+        "gfrc_panels",
+        "continuous_skin"
+      ],
+      "color_hex": "#16A085"
+    }
+  ]
+}

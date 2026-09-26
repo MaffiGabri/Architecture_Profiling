@@ -1,0 +1,1030 @@
+{
+  "$schema": "./tournament_fixtures.schema.json",
+  "version": "1.0.0",
+  "tolerance": 0.0001,
+  "canonical_schedule_45": [
+    {
+      "match_index": 0,
+      "left_style_id": 1,
+      "right_style_id": 10
+    },
+    {
+      "match_index": 1,
+      "left_style_id": 2,
+      "right_style_id": 9
+    },
+    {
+      "match_index": 2,
+      "left_style_id": 3,
+      "right_style_id": 8
+    },
+    {
+      "match_index": 3,
+      "left_style_id": 4,
+      "right_style_id": 7
+    },
+    {
+      "match_index": 4,
+      "left_style_id": 5,
+      "right_style_id": 6
+    },
+    {
+      "match_index": 5,
+      "left_style_id": 10,
+      "right_style_id": 2
+    },
+    {
+      "match_index": 6,
+      "left_style_id": 3,
+      "right_style_id": 1
+    },
+    {
+      "match_index": 7,
+      "left_style_id": 9,
+      "right_style_id": 4
+    },
+    {
+      "match_index": 8,
+      "left_style_id": 8,
+      "right_style_id": 5
+    },
+    {
+      "match_index": 9,
+      "left_style_id": 7,
+      "right_style_id": 6
+    },
+    {
+      "match_index": 10,
+      "left_style_id": 10,
+      "right_style_id": 3
+    },
+    {
+      "match_index": 11,
+      "left_style_id": 2,
+      "right_style_id": 4
+    },
+    {
+      "match_index": 12,
+      "left_style_id": 1,
+      "right_style_id": 5
+    },
+    {
+      "match_index": 13,
+      "left_style_id": 6,
+      "right_style_id": 9
+    },
+    {
+      "match_index": 14,
+      "left_style_id": 7,
+      "right_style_id": 8
+    },
+    {
+      "match_index": 15,
+      "left_style_id": 4,
+      "right_style_id": 10
+    },
+    {
+      "match_index": 16,
+      "left_style_id": 5,
+      "right_style_id": 3
+    },
+    {
+      "match_index": 17,
+      "left_style_id": 6,
+      "right_style_id": 2
+    },
+    {
+      "match_index": 18,
+      "left_style_id": 7,
+      "right_style_id": 1
+    },
+    {
+      "match_index": 19,
+      "left_style_id": 9,
+      "right_style_id": 8
+    },
+    {
+      "match_index": 20,
+      "left_style_id": 5,
+      "right_style_id": 10
+    },
+    {
+      "match_index": 21,
+      "left_style_id": 4,
+      "right_style_id": 6
+    },
+    {
+      "match_index": 22,
+      "left_style_id": 3,
+      "right_style_id": 7
+    },
+    {
+      "match_index": 23,
+      "left_style_id": 8,
+      "right_style_id": 2
+    },
+    {
+      "match_index": 24,
+      "left_style_id": 1,
+      "right_style_id": 9
+    },
+    {
+      "match_index": 25,
+      "left_style_id": 10,
+      "right_style_id": 6
+    },
+    {
+      "match_index": 26,
+      "left_style_id": 7,
+      "right_style_id": 5
+    },
+    {
+      "match_index": 27,
+      "left_style_id": 8,
+      "right_style_id": 4
+    },
+    {
+      "match_index": 28,
+      "left_style_id": 9,
+      "right_style_id": 3
+    },
+    {
+      "match_index": 29,
+      "left_style_id": 2,
+      "right_style_id": 1
+    },
+    {
+      "match_index": 30,
+      "left_style_id": 10,
+      "right_style_id": 7
+    },
+    {
+      "match_index": 31,
+      "left_style_id": 6,
+      "right_style_id": 8
+    },
+    {
+      "match_index": 32,
+      "left_style_id": 5,
+      "right_style_id": 9
+    },
+    {
+      "match_index": 33,
+      "left_style_id": 1,
+      "right_style_id": 4
+    },
+    {
+      "match_index": 34,
+      "left_style_id": 2,
+      "right_style_id": 3
+    },
+    {
+      "match_index": 35,
+      "left_style_id": 8,
+      "right_style_id": 10
+    },
+    {
+      "match_index": 36,
+      "left_style_id": 9,
+      "right_style_id": 7
+    },
+    {
+      "match_index": 37,
+      "left_style_id": 6,
+      "right_style_id": 1
+    },
+    {
+      "match_index": 38,
+      "left_style_id": 5,
+      "right_style_id": 2
+    },
+    {
+      "match_index": 39,
+      "left_style_id": 4,
+      "right_style_id": 3
+    },
+    {
+      "match_index": 40,
+      "left_style_id": 9,
+      "right_style_id": 10
+    },
+    {
+      "match_index": 41,
+      "left_style_id": 1,
+      "right_style_id": 8
+    },
+    {
+      "match_index": 42,
+      "left_style_id": 2,
+      "right_style_id": 7
+    },
+    {
+      "match_index": 43,
+      "left_style_id": 3,
+      "right_style_id": 6
+    },
+    {
+      "match_index": 44,
+      "left_style_id": 4,
+      "right_style_id": 5
+    }
+  ],
+  "test_cases": [
+    {
+      "id": "TC1_transitive_dominance",
+      "name": "Perfect Transitive Dominance (1 > 2 > ... > 10)",
+      "mode": "full",
+      "match_count": 45,
+      "match_winners": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        2,
+        1,
+        4,
+        5,
+        6,
+        3,
+        2,
+        1,
+        6,
+        7,
+        4,
+        3,
+        2,
+        1,
+        8,
+        5,
+        4,
+        3,
+        2,
+        1,
+        6,
+        5,
+        4,
+        3,
+        1,
+        7,
+        6,
+        5,
+        1,
+        2,
+        8,
+        7,
+        1,
+        2,
+        3,
+        9,
+        1,
+        2,
+        3,
+        4
+      ],
+      "expected": {
+        "algorithm": "LaplaceFallback",
+        "iterations": 0,
+        "style_wins": {
+          "1": 9,
+          "2": 8,
+          "3": 7,
+          "4": 6,
+          "5": 5,
+          "6": 4,
+          "7": 3,
+          "8": 2,
+          "9": 1,
+          "10": 0
+        },
+        "dominant_style_id": 1,
+        "dominant_category": "classical_renaissance",
+        "delta": 0.018182,
+        "circular_triads": 0.0,
+        "zeta": 1.0,
+        "margin_factor": 0.054491,
+        "entropy": 2.151282,
+        "entropy_concentration": 0.06571,
+        "confidence_pct": 48.2214,
+        "archetype": "The Classical Monumentalist",
+        "traits_5d": {
+          "era": 4.3727,
+          "ornamentation": 5.7909,
+          "structural_honesty": 6.8364,
+          "geometric_order": 2.5273,
+          "material_warmth": 6.0364
+        },
+        "category_rankings": [
+          {
+            "rank": 1,
+            "category_id": "classical_renaissance",
+            "percentage": 32.7273
+          },
+          {
+            "rank": 2,
+            "category_id": "historicist_sacred",
+            "percentage": 29.0909
+          },
+          {
+            "rank": 3,
+            "category_id": "modernism_functionalism",
+            "percentage": 16.3636
+          },
+          {
+            "rank": 4,
+            "category_id": "early_modern_industrial",
+            "percentage": 16.3636
+          },
+          {
+            "rank": 5,
+            "category_id": "contemporary_parametric",
+            "percentage": 5.4545
+          }
+        ],
+        "style_rankings": [
+          {
+            "rank": 1,
+            "style_id": 1,
+            "percentage": 18.1818
+          },
+          {
+            "rank": 2,
+            "style_id": 2,
+            "percentage": 16.3636
+          },
+          {
+            "rank": 3,
+            "style_id": 3,
+            "percentage": 14.5455
+          },
+          {
+            "rank": 4,
+            "style_id": 4,
+            "percentage": 12.7273
+          },
+          {
+            "rank": 5,
+            "style_id": 5,
+            "percentage": 10.9091
+          },
+          {
+            "rank": 6,
+            "style_id": 6,
+            "percentage": 9.0909
+          },
+          {
+            "rank": 7,
+            "style_id": 7,
+            "percentage": 7.2727
+          },
+          {
+            "rank": 8,
+            "style_id": 8,
+            "percentage": 5.4545
+          },
+          {
+            "rank": 9,
+            "style_id": 9,
+            "percentage": 3.6364
+          },
+          {
+            "rank": 10,
+            "style_id": 10,
+            "percentage": 1.8182
+          }
+        ]
+      }
+    },
+    {
+      "id": "TC2_cyclic_contradiction",
+      "name": "Extreme Cyclic Contradiction (Max Circular Triads)",
+      "mode": "full",
+      "match_count": 45,
+      "match_winners": [
+        10,
+        9,
+        3,
+        4,
+        5,
+        10,
+        1,
+        4,
+        5,
+        6,
+        10,
+        2,
+        1,
+        6,
+        7,
+        10,
+        3,
+        2,
+        7,
+        8,
+        5,
+        4,
+        3,
+        8,
+        9,
+        6,
+        5,
+        4,
+        9,
+        1,
+        7,
+        6,
+        5,
+        1,
+        2,
+        8,
+        7,
+        1,
+        2,
+        3,
+        9,
+        8,
+        2,
+        3,
+        4
+      ],
+      "expected": {
+        "algorithm": "BradleyTerryMM",
+        "iterations": 13,
+        "style_wins": {
+          "1": 5,
+          "2": 5,
+          "3": 5,
+          "4": 5,
+          "5": 5,
+          "6": 4,
+          "7": 4,
+          "8": 4,
+          "9": 4,
+          "10": 4
+        },
+        "dominant_style_id": 1,
+        "dominant_category": "classical_renaissance",
+        "delta": 0.0,
+        "circular_triads": 40.0,
+        "zeta": 0.0,
+        "margin_factor": 0.0,
+        "entropy": 2.282451,
+        "entropy_concentration": 0.008744,
+        "confidence_pct": 15.0,
+        "archetype": "The Eclectic Synthesizer",
+        "traits_5d": {
+          "era": 5.4,
+          "ornamentation": 5.18,
+          "structural_honesty": 6.88,
+          "geometric_order": 3.44,
+          "material_warmth": 5.42
+        },
+        "category_rankings": [
+          {
+            "rank": 1,
+            "category_id": "classical_renaissance",
+            "percentage": 23.9998
+          },
+          {
+            "rank": 2,
+            "category_id": "historicist_sacred",
+            "percentage": 23.9998
+          },
+          {
+            "rank": 3,
+            "category_id": "early_modern_industrial",
+            "percentage": 20.0
+          },
+          {
+            "rank": 4,
+            "category_id": "modernism_functionalism",
+            "percentage": 16.0002
+          },
+          {
+            "rank": 5,
+            "category_id": "contemporary_parametric",
+            "percentage": 16.0002
+          }
+        ],
+        "style_rankings": [
+          {
+            "rank": 1,
+            "style_id": 1,
+            "percentage": 11.9999
+          },
+          {
+            "rank": 2,
+            "style_id": 2,
+            "percentage": 11.9999
+          },
+          {
+            "rank": 3,
+            "style_id": 3,
+            "percentage": 11.9999
+          },
+          {
+            "rank": 4,
+            "style_id": 4,
+            "percentage": 11.9999
+          },
+          {
+            "rank": 5,
+            "style_id": 5,
+            "percentage": 11.9999
+          },
+          {
+            "rank": 6,
+            "style_id": 6,
+            "percentage": 8.0001
+          },
+          {
+            "rank": 7,
+            "style_id": 7,
+            "percentage": 8.0001
+          },
+          {
+            "rank": 8,
+            "style_id": 8,
+            "percentage": 8.0001
+          },
+          {
+            "rank": 9,
+            "style_id": 9,
+            "percentage": 8.0001
+          },
+          {
+            "rank": 10,
+            "style_id": 10,
+            "percentage": 8.0001
+          }
+        ]
+      }
+    },
+    {
+      "id": "TC3_quick_tournament",
+      "name": "Quick Tournament (15 matches, Modernism/Brutalism)",
+      "mode": "quick",
+      "match_count": 15,
+      "match_winners": [
+        10,
+        9,
+        8,
+        7,
+        6,
+        2,
+        3,
+        9,
+        8,
+        6,
+        10,
+        4,
+        5,
+        6,
+        7
+      ],
+      "expected": {
+        "algorithm": "LaplaceFallback",
+        "iterations": 0,
+        "style_wins": {
+          "1": 0,
+          "2": 1,
+          "3": 1,
+          "4": 1,
+          "5": 1,
+          "6": 3,
+          "7": 2,
+          "8": 2,
+          "9": 2,
+          "10": 2
+        },
+        "dominant_style_id": 6,
+        "dominant_category": "modernism_functionalism",
+        "delta": 0.04,
+        "circular_triads": 12.0,
+        "zeta": 0.7,
+        "margin_factor": 0.119427,
+        "entropy": 2.247928,
+        "entropy_concentration": 0.023737,
+        "confidence_pct": 36.1547,
+        "archetype": "The Brutalist Sculptor",
+        "traits_5d": {
+          "era": 6.66,
+          "ornamentation": 3.72,
+          "structural_honesty": 7.5,
+          "geometric_order": 4.06,
+          "material_warmth": 4.32
+        },
+        "category_rankings": [
+          {
+            "rank": 1,
+            "category_id": "modernism_functionalism",
+            "percentage": 28.0
+          },
+          {
+            "rank": 2,
+            "category_id": "contemporary_parametric",
+            "percentage": 24.0
+          },
+          {
+            "rank": 3,
+            "category_id": "early_modern_industrial",
+            "percentage": 20.0
+          },
+          {
+            "rank": 4,
+            "category_id": "historicist_sacred",
+            "percentage": 16.0
+          },
+          {
+            "rank": 5,
+            "category_id": "classical_renaissance",
+            "percentage": 12.0
+          }
+        ],
+        "style_rankings": [
+          {
+            "rank": 1,
+            "style_id": 6,
+            "percentage": 16.0
+          },
+          {
+            "rank": 2,
+            "style_id": 7,
+            "percentage": 12.0
+          },
+          {
+            "rank": 3,
+            "style_id": 8,
+            "percentage": 12.0
+          },
+          {
+            "rank": 4,
+            "style_id": 9,
+            "percentage": 12.0
+          },
+          {
+            "rank": 5,
+            "style_id": 10,
+            "percentage": 12.0
+          },
+          {
+            "rank": 6,
+            "style_id": 2,
+            "percentage": 8.0
+          },
+          {
+            "rank": 7,
+            "style_id": 3,
+            "percentage": 8.0
+          },
+          {
+            "rank": 8,
+            "style_id": 4,
+            "percentage": 8.0
+          },
+          {
+            "rank": 9,
+            "style_id": 5,
+            "percentage": 8.0
+          },
+          {
+            "rank": 10,
+            "style_id": 1,
+            "percentage": 4.0
+          }
+        ]
+      }
+    },
+    {
+      "id": "TC4_category_polarized_classical",
+      "name": "Category Polarized (Classical Dominance vs Modernism)",
+      "mode": "full",
+      "match_count": 45,
+      "match_winners": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        2,
+        1,
+        4,
+        5,
+        6,
+        3,
+        2,
+        1,
+        9,
+        8,
+        4,
+        3,
+        2,
+        1,
+        8,
+        5,
+        4,
+        3,
+        2,
+        1,
+        10,
+        5,
+        4,
+        3,
+        1,
+        10,
+        8,
+        5,
+        1,
+        3,
+        8,
+        9,
+        1,
+        2,
+        3,
+        9,
+        1,
+        2,
+        3,
+        4
+      ],
+      "expected": {
+        "algorithm": "LaplaceFallback",
+        "iterations": 0,
+        "style_wins": {
+          "1": 9,
+          "2": 7,
+          "3": 8,
+          "4": 6,
+          "5": 5,
+          "6": 1,
+          "7": 0,
+          "8": 4,
+          "9": 3,
+          "10": 2
+        },
+        "dominant_style_id": 1,
+        "dominant_category": "classical_renaissance",
+        "delta": 0.018182,
+        "circular_triads": 0.0,
+        "zeta": 1.0,
+        "margin_factor": 0.054491,
+        "entropy": 2.151282,
+        "entropy_concentration": 0.06571,
+        "confidence_pct": 48.2214,
+        "archetype": "The Classical Monumentalist",
+        "traits_5d": {
+          "era": 4.5818,
+          "ornamentation": 5.9455,
+          "structural_honesty": 6.6,
+          "geometric_order": 3.1,
+          "material_warmth": 6.0
+        },
+        "category_rankings": [
+          {
+            "rank": 1,
+            "category_id": "classical_renaissance",
+            "percentage": 34.5455
+          },
+          {
+            "rank": 2,
+            "category_id": "historicist_sacred",
+            "percentage": 27.2727
+          },
+          {
+            "rank": 3,
+            "category_id": "early_modern_industrial",
+            "percentage": 20.0
+          },
+          {
+            "rank": 4,
+            "category_id": "contemporary_parametric",
+            "percentage": 12.7273
+          },
+          {
+            "rank": 5,
+            "category_id": "modernism_functionalism",
+            "percentage": 5.4545
+          }
+        ],
+        "style_rankings": [
+          {
+            "rank": 1,
+            "style_id": 1,
+            "percentage": 18.1818
+          },
+          {
+            "rank": 2,
+            "style_id": 3,
+            "percentage": 16.3636
+          },
+          {
+            "rank": 3,
+            "style_id": 2,
+            "percentage": 14.5455
+          },
+          {
+            "rank": 4,
+            "style_id": 4,
+            "percentage": 12.7273
+          },
+          {
+            "rank": 5,
+            "style_id": 5,
+            "percentage": 10.9091
+          },
+          {
+            "rank": 6,
+            "style_id": 8,
+            "percentage": 9.0909
+          },
+          {
+            "rank": 7,
+            "style_id": 9,
+            "percentage": 7.2727
+          },
+          {
+            "rank": 8,
+            "style_id": 10,
+            "percentage": 5.4545
+          },
+          {
+            "rank": 9,
+            "style_id": 6,
+            "percentage": 3.6364
+          },
+          {
+            "rank": 10,
+            "style_id": 7,
+            "percentage": 1.8182
+          }
+        ]
+      }
+    },
+    {
+      "id": "TC5_uniform_noise",
+      "name": "Uniform Draws / Alternating Noise",
+      "mode": "full",
+      "match_count": 45,
+      "match_winners": [
+        1,
+        9,
+        3,
+        7,
+        5,
+        2,
+        3,
+        4,
+        8,
+        6,
+        10,
+        4,
+        1,
+        9,
+        7,
+        10,
+        5,
+        2,
+        7,
+        8,
+        5,
+        6,
+        3,
+        2,
+        1,
+        6,
+        7,
+        4,
+        9,
+        1,
+        10,
+        8,
+        5,
+        4,
+        2,
+        10,
+        9,
+        1,
+        5,
+        3,
+        9,
+        8,
+        2,
+        6,
+        4
+      ],
+      "expected": {
+        "algorithm": "BradleyTerryMM",
+        "iterations": 13,
+        "style_wins": {
+          "1": 5,
+          "2": 5,
+          "3": 4,
+          "4": 5,
+          "5": 5,
+          "6": 4,
+          "7": 4,
+          "8": 4,
+          "9": 5,
+          "10": 4
+        },
+        "dominant_style_id": 1,
+        "dominant_category": "historicist_sacred",
+        "delta": 0.0,
+        "circular_triads": 40.0,
+        "zeta": 0.0,
+        "margin_factor": 0.0,
+        "entropy": 2.282451,
+        "entropy_concentration": 0.008744,
+        "confidence_pct": 15.0,
+        "archetype": "The Eclectic Synthesizer",
+        "traits_5d": {
+          "era": 5.628,
+          "ornamentation": 5.0,
+          "structural_honesty": 6.9,
+          "geometric_order": 3.78,
+          "material_warmth": 5.22
+        },
+        "category_rankings": [
+          {
+            "rank": 1,
+            "category_id": "historicist_sacred",
+            "percentage": 23.9998
+          },
+          {
+            "rank": 2,
+            "category_id": "classical_renaissance",
+            "percentage": 20.0
+          },
+          {
+            "rank": 3,
+            "category_id": "early_modern_industrial",
+            "percentage": 20.0
+          },
+          {
+            "rank": 4,
+            "category_id": "contemporary_parametric",
+            "percentage": 20.0
+          },
+          {
+            "rank": 5,
+            "category_id": "modernism_functionalism",
+            "percentage": 16.0002
+          }
+        ],
+        "style_rankings": [
+          {
+            "rank": 1,
+            "style_id": 1,
+            "percentage": 11.9999
+          },
+          {
+            "rank": 2,
+            "style_id": 2,
+            "percentage": 11.9999
+          },
+          {
+            "rank": 3,
+            "style_id": 4,
+            "percentage": 11.9999
+          },
+          {
+            "rank": 4,
+            "style_id": 5,
+            "percentage": 11.9999
+          },
+          {
+            "rank": 5,
+            "style_id": 9,
+            "percentage": 11.9999
+          },
+          {
+            "rank": 6,
+            "style_id": 3,
+            "percentage": 8.0001
+          },
+          {
+            "rank": 7,
+            "style_id": 6,
+            "percentage": 8.0001
+          },
+          {
+            "rank": 8,
+            "style_id": 7,
+            "percentage": 8.0001
+          },
+          {
+            "rank": 9,
+            "style_id": 8,
+            "percentage": 8.0001
+          },
+          {
+            "rank": 10,
+            "style_id": 10,
+            "percentage": 8.0001
+          }
+        ]
+      }
+    }
+  ],
+  "": "./tournament_fixtures.schema.json"
+}

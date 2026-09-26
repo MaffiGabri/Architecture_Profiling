@@ -1,0 +1,213 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://architectureprofiling.com/schemas/styles.schema.json",
+  "title": "ArchitecturalDataset",
+  "description": "Formal Draft-07 schema for styles.json metadata contract in the Architecture Profiling tournament engine.",
+  "type": "object",
+  "required": [
+    "version",
+    "categories",
+    "styles"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Optional URI or relative path to the validating schema."
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$",
+      "description": "Semantic version of the dataset (e.g. 1.0.0)."
+    },
+    "categories": {
+      "type": "array",
+      "description": "Exhaustive list of balanced architectural categories.",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "$ref": "#/definitions/category"
+      }
+    },
+    "styles": {
+      "type": "array",
+      "description": "Complete collection of 10 balanced architectural styles with 5D aesthetic traits.",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "$ref": "#/definitions/style"
+      }
+    }
+  },
+  "definitions": {
+    "category": {
+      "type": "object",
+      "description": "High-level architectural grouping definition.",
+      "required": [
+        "id",
+        "name_en",
+        "name_it",
+        "description_en",
+        "description_it",
+        "color_hex"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+$",
+          "description": "Unique machine-readable snake_case identifier for the category."
+        },
+        "name_en": {
+          "type": "string",
+          "minLength": 1,
+          "description": "English human-readable display name."
+        },
+        "name_it": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Italian human-readable display name."
+        },
+        "description_en": {
+          "type": "string",
+          "minLength": 10,
+          "description": "Detailed English architectural narrative describing this category."
+        },
+        "description_it": {
+          "type": "string",
+          "minLength": 10,
+          "description": "Detailed Italian architectural narrative describing this category."
+        },
+        "color_hex": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$",
+          "description": "RGB hex color code with leading hash for category badge styling and radar charts."
+        }
+      }
+    },
+    "traits": {
+      "type": "object",
+      "description": "5-dimensional continuous aesthetic vector defining architectural coordinates in [0.0, 10.0]^5.",
+      "required": [
+        "era",
+        "ornamentation",
+        "structural_honesty",
+        "geometric_order",
+        "material_warmth"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "era": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 10.0,
+          "description": "Historical timeline axis: 0.0 = Antiquity (c. 500 BC), 10.0 = Cutting-Edge Contemporary."
+        },
+        "ornamentation": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 10.0,
+          "description": "Decorative density axis: 0.0 = Stripped Minimalist / Pure Form, 10.0 = Lavish / Hyper-Decorated."
+        },
+        "structural_honesty": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 10.0,
+          "description": "Tectonic legibility axis: 0.0 = Clad / Concealed Structure, 10.0 = Raw Béton Brut / Exposed Exoskeleton."
+        },
+        "geometric_order": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 10.0,
+          "description": "Spatial symmetry axis: 0.0 = Strict Axial / Bilateral Symmetry, 10.0 = Fluid / Parametric / Non-Orthogonal."
+        },
+        "material_warmth": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 10.0,
+          "description": "Haptic material axis: 0.0 = Cold Glazing / Polished Steel, 10.0 = Warm Natural Masonry / Terracotta / Stone."
+        }
+      }
+    },
+    "style": {
+      "type": "object",
+      "description": "Individual architectural style entry within the tournament dataset.",
+      "required": [
+        "id",
+        "filename",
+        "title",
+        "style_en",
+        "style_it",
+        "category_id",
+        "era_century",
+        "base_weight",
+        "traits",
+        "tags",
+        "color_hex"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10,
+          "description": "Unique 1-based sequential integer identifier matching tournament array indices."
+        },
+        "filename": {
+          "type": "string",
+          "pattern": "^arch_[0-9]{2}_[a-z0-9_]+\\.png$",
+          "description": "Local asset image filename in shared/images/ (e.g. arch_01_classical.png)."
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Evocative English monument/building exemplar title."
+        },
+        "style_en": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Official architectural style name in English."
+        },
+        "style_it": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Official architectural style name in Italian."
+        },
+        "category_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+$",
+          "description": "Foreign key reference referencing category.id."
+        },
+        "era_century": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Historical epoch date string."
+        },
+        "base_weight": {
+          "type": "number",
+          "minimum": 0.1,
+          "maximum": 5.0,
+          "default": 1.0,
+          "description": "Initial prior weight multiplier for Bradley-Terry preference modeling (default 1.0)."
+        },
+        "traits": {
+          "$ref": "#/definitions/traits"
+        },
+        "tags": {
+          "type": "array",
+          "description": "Descriptive architectural feature tags.",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "color_hex": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$",
+          "description": "Individual style brand accent hex color with leading hash."
+        }
+      }
+    }
+  }
+}

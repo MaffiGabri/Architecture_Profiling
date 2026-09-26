@@ -1,0 +1,25 @@
+# Android
+android/build/
+android/.gradle/
+android/.kotlin/
+android/app/build/
+android/local.properties
+android/build_exit.txt
+
+# Windows / C++
+build/
+tools/
+
+# Subagents
+.agents/
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+
+# Build artifacts
+*.exe
+*.dll
+*.so
+*.dylib
